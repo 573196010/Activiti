@@ -1187,4 +1187,26 @@
 		<connection>scm:git:git@github.com:Activiti/Activiti.git</connection>
 		<developerConnection>scm:git:git@github.com:Activiti/Activiti.git</developerConnection>
 	</scm>
+	<repositories>
+		<repository>
+			<id>nexus.msok.com</id>
+			<name>Nexus Maven Repository</name>
+			<url>http://10.32.31.241/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+	<!-- 私服地址 -->
+	<distributionManagement>
+		<repository>
+			<id>local_nexus_release</id>
+			<name>deployment</name>
+			<url>http://10.32.31.241/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>local_nexus_snapshots</id>
+			<name>deployment</name>
+			<url>http://10.32.31.241/nexus/content/repositories/snapshots/</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
